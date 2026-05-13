@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-DIrIbxhs.js"></script>
+    <script type="module" crossorigin src="./assets/index-BidhadBC.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DNbS4tJ4.css">
   </head>
   <body class="page">
@@ -58,8 +58,8 @@
                 required
                 minlength="2"
                 maxlength="40"
-                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^(?=.*[A-Za-zА-Яа-яЁё])[A-Za-zА-Яа-яЁё\s-]+$"
+                data-error-message="Поле должно содержать хотя бы одну букву и не может состоять только из дефисов или пробелов"
               />
               <span class="popup__error" id="user-name-error"></span>
             </label>
@@ -102,8 +102,8 @@
                 placeholder="Название"
                 minlength="2"
                 maxlength="30"
-                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^(?=.*[A-Za-zА-Яа-яЁё])[A-Za-zА-Яа-яЁё\s-]+$"
+                data-error-message="Поле должно содержать хотя бы одну букву и не может состоять только из дефисов или пробелов"
                 required
               />
               <span class="popup__error" id="place-name-error"></span>
@@ -188,8 +188,8 @@
       <li class="places__item card">
         <img class="card__image" src="" alt="" />
         <div class="card__control">
-          <button type="button" class="card__control-button card__control-button_type_delete"></button>
           <button type="button" class="card__control-button card__control-button_type_info">i</button>
+          <button type="button" class="card__control-button card__control-button_type_delete"></button>
         </div>
         <div class="card__description">
           <h2 class="card__title"></h2>
